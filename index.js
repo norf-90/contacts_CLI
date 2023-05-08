@@ -20,7 +20,7 @@ const ivokeAction = async ({ action, id, name, email, phone }) => {
       break;
 
     case 'add':
-      const newContact = await contactsService.addContact(id, name, email, phone);
+      const newContact = await contactsService.addContact(name, email, phone);
       console.log(newContact);
       break;
 
@@ -39,7 +39,7 @@ program
   .option('-i, --id <type>')
   .option('-n, --name <type>')
   .option('-e, --email <type>')
-  .option('-p, --phone');
+  .option('-p, --phone <type>');
 
 program.parse();
 const options = program.opts();
