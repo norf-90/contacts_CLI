@@ -1,24 +1,46 @@
-const fs = require('fs');
+const fs = require('fs/promises');
 const path = require('path');
+const nanoid = require('nanoid');
 
-const contactsPath = './contacts.js';
+const contactsPath = path.join(__dirname, 'db/contacts.json');
+console.log(contactsPath);
 
-// TODO: задокументувати кожну функцію
-
-function listContacts() {
-  // ...твій код
+async function listContacts() {
+  const data = await fs.readFile(contactsPath);
+  return JSON.parse(data);
 }
 
-function getContactById(contactId) {
-  // ...твій код
+async function getContactById(contactId) {
+  const contacts = await listContacts();
+  const result = contacts.find(contact => (contact.id === contactId ? true : false));
+  return result || null;
 }
 
-function removeContact(contactId) {
-  // ...твій код
+async function removeContact(contactId) {
+  const contacts = await listContacts();
+  const index = contacts.findIndex(item => item.id === contactId);
+  if (index === -1) return null;
+
+  const [result] = contacts.splice(index, 1);
+  await fs.writeFile(contactsPath, JSON.stringify(newContacts));
+  return result;
 }
 
-function addContact(name, email, phone) {
-  // ...твій код
+async function addContact(name, email, phone) {
+  const contacts = await listContacts();
+  const newContact = { id: nanoid, name, email, phone };
+  const newContacts = [...contacts, newContact];
+  await fs.writeFile(contactsPath, JSON.stringify(newContacts, null, 2));
+  return newContact;
+}
+
+async function updateContactById(contactId, ...data) {
+  const contacts = await listContacts();
+  const index = contacts.findIndex(item => item.id === contactId);
+  if (index === -1) return null;
+  contacts[index] = { id, ...data };
+  await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
+  return contacts[index];
 }
 
 module.exports = {
@@ -26,4 +48,5 @@ module.exports = {
   getContactById,
   removeContact,
   addContact,
+  updateContactById,
 };
