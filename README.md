@@ -10,7 +10,7 @@
 
 ![alt text](https://i.imgur.com/Q0VFiam.png)
 
-**node index -a remove -i qdggE76Jtbfd9eWJHrssH**
+**node index -a remove -i AeHIrLTr6JkxGE6SN-0Rw**
 
 ![alt text](https://i.imgur.com/AkLjX5Q.png)
 
@@ -18,7 +18,7 @@
 
 ![alt text](https://i.imgur.com/HxnaRam.png)
 
-**node index -a update -i Ju0If5dlqDZkigrONSR-9 -n Brendan -e brendanEich@gmail.com -p
+**node index -a update -i WjXCPu19gwLLZU4Lw4fuw -n Brendan -e brendanEich@gmail.com -p
 088-88-88-887**
 
 ![alt text](https://i.imgur.com/nAlWNJh.png)
