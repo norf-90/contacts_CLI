@@ -2,4 +2,6 @@
 
 Screens:
 
-node index -a list ![alt text](https://prnt.sc/IrVwuYJBC3o1)
+node index -a list
+
+![alt text](https://prnt.sc/S2kS0GmodrYj)

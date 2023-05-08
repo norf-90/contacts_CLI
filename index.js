@@ -43,5 +43,4 @@ program
 
 program.parse();
 const options = program.opts();
-console.log(options);
 ivokeAction(options);
