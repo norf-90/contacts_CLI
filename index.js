@@ -9,7 +9,7 @@ const ivokeAction = async ({ action, id, name, email, phone }) => {
       console.log(contacts);
       break;
 
-    case 'getById':
+    case 'get':
       const contact = await contactsService.getContactById(id);
       console.log(contact);
       break;
@@ -24,7 +24,7 @@ const ivokeAction = async ({ action, id, name, email, phone }) => {
       console.log(newContact);
       break;
 
-    case 'updateById':
+    case 'update':
       const updatedContact = await contactsService.updateContactById(id, name, email, phone);
       console.log(updatedContact);
       break;

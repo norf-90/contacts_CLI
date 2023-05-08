@@ -4,21 +4,21 @@
 
 **node index -a list**
 
-![alt text](https://i.imgur.com/sjvGHFA.png)
+![alt text](https://i.imgur.com/IV7f1qD.png)
 
-**node index -a getById -i AeHIrLTr6JkxGE6SN-0Rw**
+**node index -a get -i AeHIrLTr6JkxGE6SN-0Rw**
 
-![alt text](https://i.imgur.com/uzwbPbq.png) node
+![alt text](https://i.imgur.com/Q0VFiam.png)
 
 **node index -a remove -i qdggE76Jtbfd9eWJHrssH**
 
-![alt text](https://i.imgur.com/vtfM4dx.png)
+![alt text](https://i.imgur.com/AkLjX5Q.png)
 
 **node index -a add -n Brendan -e brendan@mail.com -p 099-999-99-99**
 
-![alt text](https://i.imgur.com/K0Y3WZ7.png)
+![alt text](https://i.imgur.com/HxnaRam.png)
 
-**node index -a updateById -i Ju0If5dlqDZkigrONSR-9 -n Brendan -e brendan@gmail.com -p
-088-88-88-888**
+**node index -a update -i Ju0If5dlqDZkigrONSR-9 -n Brendan -e brendanEich@gmail.com -p
+088-88-88-887**
 
-![alt text](https://i.imgur.com/0JZrX5z.png)
+![alt text](https://i.imgur.com/nAlWNJh.png)
