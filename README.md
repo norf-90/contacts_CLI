@@ -4,4 +4,4 @@ Screens:
 
 node index -a list
 
-![alt text](https://prnt.sc/S2kS0GmodrYj)
+![alt text](https://prnt.sc/S2kS0GmodrYj.jpg)
